@@ -12,7 +12,7 @@ namespace wpf_caliburn_micro.ViewModels
 {
     internal class SettingViewModel : Conductor<object>
     {
-        private static SettingViewModel Instance;
+        private static SettingViewModel? Instance;
         
         public static SettingViewModel GetInstance()
         {

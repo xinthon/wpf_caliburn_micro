@@ -11,7 +11,7 @@ namespace wpf_caliburn_micro.ViewModels
     {
 
 
-        private static HomeViewModel Instance;
+        private static HomeViewModel? Instance;
         public static HomeViewModel GetInstance()
         {
             if(Instance == null)
