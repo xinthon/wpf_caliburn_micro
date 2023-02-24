@@ -10,12 +10,14 @@ using wpf_caliburn_micro.ViewModels.Commands;
 
 namespace wpf_caliburn_micro.ViewModels
 {
-    internal class MainViewModel : Screen
+    internal class MainViewModel : Conductor<object>                                                                                                                                                                                                                                                                                                       
     {
         public ICommand TestingRelayCommand { get; }
 
         public MainViewModel()
         {
+            this.ActiveItem = new ShellViewModel();
+
             TestingRelayCommand = new RelayCommand((object? param) =>
             {
                 MessageBox.Show(param?.ToString() ?? "");
